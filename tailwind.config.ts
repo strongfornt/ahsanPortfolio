@@ -7,11 +7,12 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
+    
+    extend: {     
       backgroundImage: {
         'bg-img':"url('/lapthree.jpg')",
         
-      },
+      },        
     },
   },
   plugins: [],
