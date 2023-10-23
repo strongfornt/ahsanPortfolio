@@ -60,7 +60,7 @@ const page = () => {
           <div className=" mt-12  ">
             <form className="space-y-7 md:-space-y-7">
               <div className="grid grid-rows-2 gap-y-7 md:gap-x-7 md:grid-cols-2">
-                <div>
+                <div className="text-white">
                 <input
                   type="text"
                   placeholder="Your name"

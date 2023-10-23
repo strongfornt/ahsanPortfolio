@@ -8,11 +8,15 @@ import Ahsan from "@/assets/ahsan.jpg";
 import Link from "next/link";
 import {
   AiFillTwitterCircle,
+  AiOutlineTwitter,
   AiFillLinkedin,
   AiOutlineGithub,
+  AiFillGithub,
   AiFillInstagram,
 } from "react-icons/ai";
-import { SiFacebook } from "react-icons/si";
+
+import { FaFacebookF } from "react-icons/fa";
+import {PiInstagramLogoLight} from 'react-icons/pi'
 import { backhome } from "@/constants/data";
 interface Props {
   title: string;
@@ -90,21 +94,38 @@ const page = () => {
                 </button>
               </a>
               <span className="h-[2px] w-14 bg-white inline-flex" />
-              <ul className=" flex items-center justify-between gap-5   ">
-                <li className="  text-2xl text-white cursor-pointer ">
-                  <SiFacebook />
-                </li>
+              <ul className="  flex  gap-4">
+          <li className=" text-md flex items-center justify-center bg-white text-[#3B5998] hover:text-white hover:bg-[#3B5998] duration-300 rounded-full h-6 w-6 cursor-pointer relative overflow-hidden hover:overflow-visible  hover:transition-all  ">
+            <FaFacebookF />
+            <span className="-translate-y-[100%] inline-flex absolute -top-3 bg-[#3B5998] text-white py-1 px-2 text-sm font-serif  rounded">
+              <span className="h-[10px] w-[10px] inline-flex bg-[#3B5998]   absolute top-[23px] left-[44%] rotate-45"/>
+              
+              Facebook</span>
+            
+          </li>
 
-                <li className=" text-2xl text-white py-2 cursor-pointer">
-                  <AiFillLinkedin className="rounded-full" />
-                </li>
-                <li className=" text-2xl text-white py-3 cursor-pointer">
-                  <AiOutlineGithub />
-                </li>
-                <li className=" text-2xl text-white py-3 cursor-pointer">
-                  <AiFillInstagram />
-                </li>
-              </ul>
+          <li className="  text-md flex items-center justify-center duration-300  text-[#46C1F6] hover:text-white hover:bg-[#46C1F6] bg-white rounded-full h-6 w-6  cursor-pointer relative overflow-hidden hover:overflow-visible">
+            <AiOutlineTwitter/>
+            <span className="-translate-y-[100%] inline-flex absolute  -top-3 bg-[#46C1F6]  text-white py-1 px-2 text-sm font-serif rounded">
+              <span className="h-[10px] w-[10px] inline-flex bg-[#46C1F6] absolute top-[23px] left-[44%] rotate-45"/>
+              
+              Twitter</span>
+          </li>
+          <li className="  text-md flex items-center justify-center duration-300 hover:text-white  text-[#e1306c] bg-white hover:bg-[#e1306c] rounded-full h-6 w-6  cursor-pointer relative overflow-hidden hover:overflow-visible ">
+            <AiFillInstagram />
+            <span className="-translate-y-[100%] inline-flex absolute  -top-3 bg-[#e1306c] text-white py-1 px-2 text-sm font-serif rounded">
+              <span className="h-[10px] w-[10px] inline-flex bg-[#e1306c] absolute top-[23px] left-[44%] rotate-45"/>
+              
+              Instagram</span>
+          </li>
+          <li className="  text-md flex items-center justify-center duration-300 hover:text-white hover:bg-[#333] text-[#333] bg-white rounded-full h-6 w-6  relative cursor-pointer overflow-hidden hover:overflow-visible">
+            <AiFillGithub />
+            <span className="-translate-y-[100%] inline-flex absolute  -top-3 bg-[#333]  text-white py-1 px-2 text-sm font-serif rounded">
+              <span className="h-[10px] w-[10px] inline-flex bg-[#333] absolute top-[23px] left-[44%] rotate-45"/>
+              
+              Github</span>
+          </li>
+        </ul>
             </div>
           </div>
         </div>
