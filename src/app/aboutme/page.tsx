@@ -13,10 +13,12 @@ import {
   AiOutlineGithub,
   AiFillGithub,
   AiFillInstagram,
+  AiFillHome,
 } from "react-icons/ai";
 
-import { FaFacebookF } from "react-icons/fa";
-import {PiInstagramLogoLight} from 'react-icons/pi'
+import { FaFacebookF ,FaUser ,FaEnvelope } from "react-icons/fa";
+import {PiInstagramLogoLight ,PiHandbagSimpleFill} from 'react-icons/pi';
+import {RxResume} from 'react-icons/rx'
 import { backhome } from "@/constants/data";
 interface Props {
   title: string;
@@ -27,6 +29,42 @@ interface Props {
 const page = () => {
   return (
     <div className="relative">
+      <div className="z-30 gap-2  top-40 relative   ">
+        <Link href={"/"}>
+          <div className="bg-yellow-500 cursor-pointer top-[18%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+            <AiFillHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <span className="translate-x-14 text-sm">HOME</span>
+          </div>
+        </Link>
+        <Link href={"/aboutme"}>
+          <div className="bg-yellow-500 cursor-pointer   group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+            <FaUser className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <span className="translate-x-14 text-sm">ABOUT</span>
+          </div>
+        </Link>
+        <Link href={"/services"}>
+          <div className="bg-yellow-500 cursor-pointer top-[36%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+            <RxResume className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
+            <span className="translate-x-14 text-sm"> RESUME</span>
+          </div>
+        </Link>
+        <Link href={"/portfolio"}>
+          <div className="bg-yellow-500 cursor-pointer top-[45%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+            <PiHandbagSimpleFill className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <span className="translate-x-16 group-hover:translate-x-12 text-sm">
+              {" "}
+              PORTFOLIO
+            </span>
+          </div>
+        </Link>
+
+        <Link href={"/contact"}>
+          <div className="bg-yellow-500 cursor-pointer top-[54%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+            <FaEnvelope className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <span className="translate-x-14 text-sm"> CONTACT</span>
+          </div>
+        </Link>
+      </div>
       {backhome.map((item) => (
         <Link key={item.title} href={item?.href}>
           <div className="fixed bg-slate-300 w-12 h-9 text-2xl mt-60 flex items-center justify-center rounded-r-md cursor-pointer hover:bg-slate-100 duration-300 ">

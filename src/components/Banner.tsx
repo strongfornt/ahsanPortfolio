@@ -50,7 +50,7 @@ const Banner = () => {
           </li>
           <li className="  text-md flex items-center justify-center duration-300 hover:text-white hover:bg-[#333] text-[#333] bg-white rounded-full h-6 w-6  relative cursor-pointer overflow-hidden hover:overflow-visible">
             <AiFillGithub />
-            <span className="-translate-x-[100%] inline-flex absolute -translate-y-[1px] -left-3 bg-[#333]  text-white py-1 px-2 text-sm font-serif rounded">
+            <span className="-translate-x-[100%] inline-flex absolute -translate-y-[1px] -left-3 bg-[#333]  text-white py-1 px-2 text-sm font-serif rounded ">
               <span className="h-[10px] w-[10px] inline-flex bg-[#333] absolute -right-[5px] rotate-45"/>
               
               Github</span>
