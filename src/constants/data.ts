@@ -4,6 +4,7 @@ import { SiSimilarweb, SiWebmoney, SiPhotobucket,SiFacebook  } from "react-icons
 import { IoLocationSharp } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { GrMail } from "react-icons/gr";
+import {FaUser} from 'react-icons/fa'
 
 export const navigation = [
   { title: "About ", href: "/aboutme" },
@@ -67,4 +68,13 @@ export const social =[
   {icon:AiFillLinkedin,},
   {icon:AiOutlineGithub,},
   {icon:AiFillInstagram,},
+]
+export const sidebar =[
+  {href:"/"},
+  {href:"/aboutme"},
+  {href:"/services"},
+  {href:"/portfolio"},
+  {href:"/contact"},
+  {id:Math.random()},
+
 ]

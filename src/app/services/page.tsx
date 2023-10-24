@@ -10,6 +10,7 @@ import { RiMenu3Fill } from "react-icons/ri";
 import { AiFillHome } from "react-icons/ai";
 import { FaUser, FaEnvelope } from "react-icons/fa";
 import { RxResume } from "react-icons/rx";
+import Nave from "@/components/Nave";
 
 interface Props {
   title: string;
@@ -20,27 +21,27 @@ interface Props {
 const page = () => {
   return (
     <div className="relative  ">
-      <div className="z-30 gap-2  top-40 relative   ">
+      <div className="z-30  hidden md:flex  top-40 relative   ">
         <Link href={"/"}>
-          <div className="bg-yellow-500 cursor-pointer top-[18%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[20%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <AiFillHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">HOME</span>
           </div>
         </Link>
         <Link href={"/aboutme"}>
-          <div className="bg-yellow-500 cursor-pointer   group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[29%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaUser className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">ABOUT</span>
           </div>
         </Link>
         <Link href={"/services"}>
-          <div className="bg-yellow-500 cursor-pointer top-[36%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[38%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <RxResume className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
             <span className="translate-x-14 text-sm"> RESUME</span>
           </div>
         </Link>
         <Link href={"/portfolio"}>
-          <div className="bg-yellow-500 cursor-pointer top-[45%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[47%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <PiHandbagSimpleFill className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-16 group-hover:translate-x-12 text-sm">
               {" "}
@@ -50,7 +51,7 @@ const page = () => {
         </Link>
 
         <Link href={"/contact"}>
-          <div className="bg-yellow-500 cursor-pointer top-[54%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[56%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaEnvelope className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm"> CONTACT</span>
           </div>
@@ -65,16 +66,17 @@ const page = () => {
         </Link>
       ))}
       <Container className="">
-        <header className="md:hidden flex items-center justify-between text-white bg-gray-500 h-16 fixed w-full px-7 md:px-o z-50 ">
+        <Nave className=" text-3xl  font-bold font-sans z-50 " title='RESUME'/>
+        {/* <header className="md:hidden flex items-center justify-between text-white bg-gray-500 h-16 fixed w-full px-7 md:px-o z-50 ">
           <p className="text-white/90 text-3xl  font-bold font-sans   flex ">
             RESU <p className="text-[#ffb400]">ME</p>
           </p>
           <p>
             <RiMenu3Fill />
           </p>
-        </header>
+        </header> */}
         <div className="w-full md:h-20 relative flex items-center"></div>
-        <div className="hidden  md:flex items-center justify-center">
+        <div className="hidden  md:flex items-center justify-center ">
           <p className="text-white/10 text-9xl font-bold translate-x-[12%]">
             SUMMARY
           </p>
@@ -85,7 +87,7 @@ const page = () => {
             <span className="h-[3px] w-16 bg-[#ffb400] inline-flex   " />
           </div>
         </div>
-        <div className="grid px-7 md:px-0 grid-rows-1 md:grid-cols-2 gap-20 mt-14 mb-20 md:mb-0 ">
+        <div className="grid px-7 md:px-0 grid-rows-1 md:grid-cols-2 gap-20 mt-20 md:mt-14 mb-20 md:mb-0  ">
           <div className="text-white/90  ">
             <p className="mb-5 font-semibold font-sans text-3xl">
               My Education

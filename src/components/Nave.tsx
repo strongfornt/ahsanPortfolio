@@ -1,15 +1,27 @@
-// import React from 'react'
-// import {AiFillHome} from 'react-icons/ai'
+'use client'
+import React from 'react'
+import {AiOutlineClose} from 'react-icons/ai';
+import { RiMenu3Fill } from 'react-icons/ri';
+import Image from 'next/image';
+import Logo from "@/assets/logoFour.png";
+import { useState } from 'react';
+type Props = {
+    title:string;
+    className?:string;
+}
 
-// const Nave = () => {
-//   return (
-//     <div className="">
-//     <div className="bg-yellow-500 cursor-pointer  group duration-300 w-[40px] h-[40px] -right-10 fixed  rounded-[100px] m-[50px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-//       <AiFillHome className='group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  '/>
-//         <span className="translate-x-12">HOME</span>
-//      </div>
-//     </div>
-//   )
-// }
+const Nave = ({title,className}:Props) => {
+    const [show, setShow] = useState(false);
+  return (
+    <div>
+         <div
+              onClick={() => setShow(!show)}
+              className=" md:hidden bg-[#343a40;] px-3 py-2 text-2xl text-white w-full justify-between flex items-center fixed h-16 z-30 "
+            >
+              <h1 className={`${className}`}>{title}</h1>{show ? <AiOutlineClose /> : <RiMenu3Fill  />}
+            </div>
+    </div>
+  )
+}
 
-// export default Nave
+export default Nave
