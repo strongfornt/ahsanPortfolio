@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-  <div  className=' w-full bg-bg-img  bg-cover bg-fixed    '>
+  <div  className=' w-full bg-bg-img  bg-cover bg-fixed priority   '>
      <main className= 'bg-black/70   max-h-screen overflow-hidden '>
        <Header/>
     <Banner/>
