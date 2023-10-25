@@ -12,10 +12,13 @@ import { FaUser, FaEnvelope } from "react-icons/fa";
 import { RxResume } from "react-icons/rx";
 import Nave from "@/components/Nave";
 
+
+
 interface Props {
   title: string;
   description: string;
   icon: ReactElement;
+  href:string;
 }
 
 const page = () => {
@@ -58,15 +61,16 @@ const page = () => {
         </Link>
       </div>
 
-      {backhome.map((item) => (
+      {/* {backhome.map((item) => (
         <Link key={item.title} href={item?.href}>
           <div className="fixed bg-slate-300 w-12 h-9 text-2xl mt-60 flex items-center justify-center rounded-r-md cursor-pointer hover:bg-slate-100 duration-300 ">
             {<item.title className="animate-bounce" />}
           </div>
         </Link>
-      ))}
+      ))} */}
       <Container className="">
-        <Nave className=" text-3xl  font-bold font-sans z-50 " title='RESUME'/>
+        
+       <Nave/>
         {/* <header className="md:hidden flex items-center justify-between text-white bg-gray-500 h-16 fixed w-full px-7 md:px-o z-50 ">
           <p className="text-white/90 text-3xl  font-bold font-sans   flex ">
             RESU <p className="text-[#ffb400]">ME</p>
@@ -82,7 +86,7 @@ const page = () => {
           </p>
           <div className="flex items-center justify-center flex-col -translate-x-[150%]">
             <p className="text-white/90 text-6xl font-bold font-sans mt-3 mb-3">
-              RESUME
+              RESU<span className="text-[#ffc107;]">ME</span>
             </p>
             <span className="h-[3px] w-16 bg-[#ffb400] inline-flex   " />
           </div>

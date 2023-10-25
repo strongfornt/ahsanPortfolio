@@ -7,6 +7,7 @@ import {AiFillHome} from 'react-icons/ai'
 import {FaUser ,FaEnvelope} from 'react-icons/fa'
 import {RxResume} from 'react-icons/rx'
 import {PiHandbagSimpleFill} from 'react-icons/pi'
+import Forcontact from "@/components/Forcontact";
 
 
 interface props {
@@ -55,6 +56,7 @@ const page = () => {
         </Link>
       </div>
       <Container className=" place-items-start md:place-items-center relative">
+        <Forcontact/>
         <header className="md:hidden flex items-center justify-between text-white bg-[#343a40;] h-16 fixed w-full px-7 md:px-o  ">
         <p className="text-white/90 text-3xl  font-bold font-sans   flex gap-2">
               GET IN <p className="text-[#ffb400]">TOUCH</p>

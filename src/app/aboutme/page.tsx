@@ -20,6 +20,7 @@ import { FaFacebookF ,FaUser ,FaEnvelope } from "react-icons/fa";
 import {PiInstagramLogoLight ,PiHandbagSimpleFill} from 'react-icons/pi';
 import {RxResume} from 'react-icons/rx'
 import { backhome } from "@/constants/data";
+import Forcontact from "@/components/Forcontact";
 interface Props {
   title: string;
   description: string;
@@ -65,21 +66,22 @@ const page = () => {
           </div>
         </Link>
       </div>
-      {backhome.map((item) => (
+      {/* {backhome.map((item) => (
         <Link key={item.title} href={item?.href}>
           <div className="fixed bg-slate-300 w-12 h-9 text-2xl mt-60 flex items-center justify-center rounded-r-md cursor-pointer hover:bg-slate-100 duration-300 ">
             {<item.title className="animate-bounce" />}
           </div>
         </Link>
-      ))}
+      ))} */}
       <Container>
+        <Forcontact/>
         <div className="w-full h-20 relative flex items-center"></div>
 
         <div className="text-white items-center justify-center flex flex-col gap-4">
           <p className="text-white/80 text-sm font-thin">Get to know me</p>
-          <p className="text-white text-4xl font-bold font-sans">
+          <p className="text-white text-4xl font-bold font-sans hidden md:flex">
             {" "}
-            About Me
+            ABOUT <span className="text-[#ffc107;]"> ME</span> 
           </p>
           <span className="h-[3px] w-16 bg-[#ffb400] inline-flex mt-5 " />
         </div>
@@ -90,7 +92,7 @@ const page = () => {
             priority
               src={Ahsan}
               alt="the person"
-              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[25%] sm:left-[36%]"
+              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[31%] sm:left-[36%]"
             />
           </div>
           <div className="text-white mt-5 w-full md:w-3/4 px-5 md:px-0 ">
@@ -173,7 +175,7 @@ const page = () => {
             Services i offer to my clients
           </p>
           <p className="text-white text-4xl font-bold font-sans">
-            My Services
+            MY SERVIC<span className="text-[#ffc107;]">ES</span>
           </p>
 
           <span className="h-[3px] w-16 inline-flex bg-[#ffb400] mt-5" />

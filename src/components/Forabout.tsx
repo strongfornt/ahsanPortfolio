@@ -11,17 +11,17 @@ import { useState } from "react";
 
 import { usePathname } from "next/navigation";
 
-const Nave = () => {
-  const [show, setShow] = useState(false);
-  const pathName = usePathname();
-  console.log(pathName);
+const Forabout = () => {
+    const [show, setShow] = useState(false);
+    const pathName = usePathname();
+    console.log(pathName);
   return (
     <div>
-      <div
+             <div
         onClick={() => setShow(!show)}
         className=" md:hidden bg-[#343a40;] px-3 py-2 text-2xl text-white w-full justify-between flex items-center fixed h-16 z-50 "
       >
-        {!show && <h1 className="text-2xl font-bold font-sans">RESU<span className="text-[#ffc107;] t">ME</span></h1>}
+        {!show && <h1 className="text-2xl font-bold font-sans">GET IN<span className="text-[#ffc107;] t"> TOUCH</span></h1>}
         <div className="fixed right-4">
           {" "}
           {show ? <AiOutlineClose /> : <RiMenu3Fill />}
@@ -50,7 +50,7 @@ const Nave = () => {
         </ul>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Nave;
+export default Forabout

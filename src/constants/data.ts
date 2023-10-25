@@ -1,10 +1,12 @@
-import { FaWindowClose, FaFacebookSquare } from "react-icons/fa";
+import { FaWindowClose, FaFacebookSquare,FaHome,FaEnvelope } from "react-icons/fa";
 import { AiFillHome ,AiFillLinkedin,AiOutlineGithub,AiFillInstagram} from "react-icons/ai";
 import { SiSimilarweb, SiWebmoney, SiPhotobucket,SiFacebook  } from "react-icons/si";
 import { IoLocationSharp } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { GrMail } from "react-icons/gr";
-import {FaUser} from 'react-icons/fa'
+import {FaUser} from 'react-icons/fa';
+import {MdNoteAlt} from 'react-icons/md'
+import {BiSolidShoppingBagAlt} from 'react-icons/bi'
 
 export const navigation = [
   { title: "About ", href: "/aboutme" },
@@ -12,6 +14,14 @@ export const navigation = [
 
   { title: "Portfolio", href: "/portfolio" },
   { title: "Contact", href: "/contact" },
+];
+export const sidebar = [
+  {title:"Home", href: "/" ,icon:FaHome,},
+  { title: "About me ", href: "/aboutme" ,icon:FaUser, },
+  { title: "Resume", href: "/services",icon:MdNoteAlt, },
+
+  { title: "Portfolio", href: "/portfolio" , icon:BiSolidShoppingBagAlt, },
+  { title: "Contact", href: "/contact",icon:FaEnvelope, },
 ];
 
 export const backhome = [
@@ -68,13 +78,4 @@ export const social =[
   {icon:AiFillLinkedin,},
   {icon:AiOutlineGithub,},
   {icon:AiFillInstagram,},
-]
-export const sidebar =[
-  {href:"/"},
-  {href:"/aboutme"},
-  {href:"/services"},
-  {href:"/portfolio"},
-  {href:"/contact"},
-  {id:Math.random()},
-
-]
+];
