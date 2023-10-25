@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import Logo from "@/assets/logoFour.png";
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 import { usePathname } from "next/navigation";
 
@@ -21,20 +22,25 @@ const Forcontact = () => {
         onClick={() => setShow(!show)}
         className=" md:hidden bg-[#343a40;] px-3 py-2 text-2xl text-white w-full justify-between flex items-center fixed h-16 z-50 "
       >
-        {!show && <h1 className="text-2xl font-bold font-sans">ABOUT<span className="text-[#ffc107;] "> ME</span></h1>}
+        {!show && <h1 className="text-2xl font-bold font-sans">GET IN<span className="text-[#ffc107;] "> TOUCH</span></h1>}
         <div className="fixed right-4">
           {" "}
           {show ? <AiOutlineClose /> : <RiMenu3Fill />}
         </div>
       </div>
       {show && (
-        <ul className=" flex flex-col max-w-full top-0  items-start bg-[#343a40;] px-4 w-full font-sans text-lg gap-2 text-md font-semibold uppercase fixed z-30">
+        <motion.ul 
+        initial={{x:-40,opacity:0}}
+        animate={{x:0,opacity:1}}
+        transition={{duration:0.2}}
+         
+        className="md:hidden flex flex-col max-w-full top-0  items-start bg-[#343a40] px-4 w-full font-sans text-lg gap-2 text-md font-semibold uppercase fixed z-30">
           <li className="w-full h-16 flex "></li>
           {sidebar.map((item) => (
             <Link key={item?.title} href={item?.href}>
               <div
                 className={`flex items-center gap-3 text-white ${
-                  pathName === item.href && "text-[#ffc107;]"
+                  pathName === item.href && "text-yellow-500"
                 }`}
               >
                 <li className="">{<item.icon />}</li>
@@ -47,7 +53,7 @@ const Forcontact = () => {
               <span className="h-[2px] w-[29rem] inline-flex bg-gray-500/20" />
             </Link>
           ))}
-        </ul>
+        </motion.ul>
       )}
     </div>
   )

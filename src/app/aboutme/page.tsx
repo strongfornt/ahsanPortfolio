@@ -16,11 +16,14 @@ import {
   AiFillHome,
 } from "react-icons/ai";
 
-import { FaFacebookF ,FaUser ,FaEnvelope } from "react-icons/fa";
+import { FaFacebookF ,FaUser ,FaEnvelope ,FaHome } from "react-icons/fa";
 import {PiInstagramLogoLight ,PiHandbagSimpleFill} from 'react-icons/pi';
+import {MdNoteAlt} from 'react-icons/md';
+import {BiSolidShoppingBagAlt} from 'react-icons/bi'
 import {RxResume} from 'react-icons/rx'
 import { backhome } from "@/constants/data";
 import Forcontact from "@/components/Forcontact";
+import Forabout from "@/components/Forabout";
 interface Props {
   title: string;
   description: string;
@@ -33,7 +36,7 @@ const page = () => {
       <div className="z-30 hidden md:flex   top-40 relative   ">
         <Link href={"/"}>
           <div className="bg-yellow-500 cursor-pointer top-[20%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <AiFillHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <FaHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">HOME</span>
           </div>
         </Link>
@@ -45,13 +48,13 @@ const page = () => {
         </Link>
         <Link href={"/services"}>
           <div className="bg-yellow-500 cursor-pointer top-[38%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <RxResume className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
+            <MdNoteAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
             <span className="translate-x-14 text-sm"> RESUME</span>
           </div>
         </Link>
         <Link href={"/portfolio"}>
           <div className="bg-yellow-500 cursor-pointer top-[47%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <PiHandbagSimpleFill className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <BiSolidShoppingBagAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-16 group-hover:translate-x-12 text-sm">
               {" "}
               PORTFOLIO
@@ -74,7 +77,7 @@ const page = () => {
         </Link>
       ))} */}
       <Container>
-        <Forcontact/>
+        <Forabout/>
         <div className="w-full h-20 relative flex items-center"></div>
 
         <div className="text-white items-center justify-center flex flex-col gap-4">
@@ -92,7 +95,7 @@ const page = () => {
             priority
               src={Ahsan}
               alt="the person"
-              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[31%] sm:left-[36%]"
+              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[28%] sm:left-[25%]"
             />
           </div>
           <div className="text-white mt-5 w-full md:w-3/4 px-5 md:px-0 ">

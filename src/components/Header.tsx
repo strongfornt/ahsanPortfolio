@@ -8,6 +8,7 @@ import { AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import Logo from "@/assets/logoFour.png";
 import { useState } from "react";
+import { motion } from "framer-motion"
 
 import { usePathname } from "next/navigation";
 const Header = () => {
@@ -18,7 +19,7 @@ const Header = () => {
     <div className=" w-full relative  ">
       <div
         onClick={() => setShow(!show)}
-        className=" md:hidden  px-3 py-2 text-2xl text-white w-full justify-between flex items-center fixed h-16 z-50 "
+        className=" md:hidden  px-3 py-2 text-2xl text-white   justify-between flex items-center fixed h-16 z-50 "
       >
         {/* {!show && <Image src={Logo} alt="logo" className="h-32 w-32" />} */}
         <div className="fixed right-4 bg-[#343a40;] p-2">
@@ -27,13 +28,17 @@ const Header = () => {
         </div>
       </div>
       {show && (
-        <ul className=" flex flex-col max-w-full top-0  items-start bg-[#343a40;] px-4 w-full font-sans text-lg gap-2 text-md font-semibold uppercase fixed z-30">
+        <motion.ul 
+        initial={{x:-40,opacity:0}}
+        animate={{x:0,opacity:1}}
+        transition={{duration:0.2}}
+        className="md:hidden flex flex-col max-w-full top-0  items-start bg-[#343a40] px-4 w-full font-sans text-lg gap-2 text-md font-semibold uppercase fixed z-30">
           <li className="w-full h-16 flex "></li>
           {sidebar.map((item) => (
             <Link key={item?.title} href={item?.href}>
               <div
                 className={`flex items-center gap-3 text-white ${
-                  pathName === item.href && "text-[#ffc107;]"
+                  pathName === item.href && "text-yellow-500"
                 }`}
               >
                 <li className="">{<item.icon />}</li>
@@ -46,7 +51,7 @@ const Header = () => {
               <span className="h-[2px] w-[29rem] inline-flex bg-gray-500/20" />
             </Link>
           ))}
-        </ul>
+        </motion.ul>
       )}
 
       <Container className={"h-16 "}>

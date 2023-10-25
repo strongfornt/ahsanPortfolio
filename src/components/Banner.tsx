@@ -63,22 +63,22 @@ const Banner = () => {
         ))}
       </div> */}
       <Container className={"h-screen w-1/2 "}>
-        <div className="flex flex-col  items-center justify-center text-white/70 h-4/6 gap-9 ">
-          <div className=" w-80">
+        <div className="flex flex-col  items-center justify-center text-white/70 h-4/6 gap-9  ">
+          <div className=" w-[21rem]  md:w-80 ">
             <p className=" text-sm font-thin flex items-center justify-center md:justify-start">Hey! There,</p>
 
             <p className=" font-serif flex gap-2  text-2xl font-semibold justify-center md:justify-start">
               I&apos;m <h1 className="font-mono">Ahsan Ullah</h1>
             </p>
 
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3  ">
               <p className="text-3xl  font-sans  gap-2  ">A</p>
-              <p className="text-teal-500 font-mono text-lg -z-1">
+              <p className="text-teal-500 font-mono text-lg -z-1 ">
                 <Typewriter
                   words={typing}
                   loop={100}
                   cursor
-                  cursorColor="black"
+                  cursorColor="white"
                   cursorStyle="|"
                   typeSpeed={70}
                   deleteSpeed={50}
@@ -91,9 +91,11 @@ const Banner = () => {
               </p>
             </div>
             <div className="flex items-center justify-center mt-9">
-              <button className="border font-semibold font-mono border-[#ffb400] w-32 p-2 rounded-full text-[#ffb400] hover:text-white/80 hover:bg-[#ffb400]  uppercase text-lg   duration-300">
+             <a href="mailto:aktershoaib574@gmail.com">
+             <button className="border font-semibold font-mono border-[#ffb400] w-32 p-2 rounded-full text-[#ffb400] hover:text-white/80 hover:bg-[#ffb400]  uppercase text-lg   duration-300">
                 Hire Me 
               </button>
+             </a>
             </div>
           </div>
         </div>

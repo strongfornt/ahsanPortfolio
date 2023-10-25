@@ -4,10 +4,12 @@ import { Contact } from "@/constants/data";
 import React, { ReactElement } from "react";
 import {RiMenu3Fill} from 'react-icons/ri'
 import {AiFillHome} from 'react-icons/ai'
-import {FaUser ,FaEnvelope} from 'react-icons/fa'
+import {FaUser ,FaEnvelope,FaHome} from 'react-icons/fa'
 import {RxResume} from 'react-icons/rx'
 import {PiHandbagSimpleFill} from 'react-icons/pi'
 import Forcontact from "@/components/Forcontact";
+import {MdNoteAlt} from 'react-icons/md'
+import {BiSolidShoppingBagAlt} from 'react-icons/bi'
 
 
 interface props {
@@ -22,7 +24,7 @@ const page = () => {
        <div className="z-30 hidden md:flex top-40 relative   ">
         <Link href={"/"}>
           <div className="bg-yellow-500 cursor-pointer top-[20%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <AiFillHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <FaHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">HOME</span>
           </div>
         </Link>
@@ -34,13 +36,13 @@ const page = () => {
         </Link>
         <Link href={"/services"}>
           <div className="bg-yellow-500 cursor-pointer top-[38%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <RxResume className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
+            <MdNoteAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
             <span className="translate-x-14 text-sm"> RESUME</span>
           </div>
         </Link>
         <Link href={"/portfolio"}>
           <div className="bg-[#ffb400] cursor-pointer top-[47%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
-            <PiHandbagSimpleFill className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
+            <BiSolidShoppingBagAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-16 group-hover:translate-x-12 text-sm">
               {" "}
               PORTFOLIO
@@ -57,13 +59,13 @@ const page = () => {
       </div>
       <Container className=" place-items-start md:place-items-center relative">
         <Forcontact/>
-        <header className="md:hidden flex items-center justify-between text-white bg-[#343a40;] h-16 fixed w-full px-7 md:px-o  ">
+        {/* <header className="md:hidden flex items-center justify-between text-white bg-[#343a40;] h-16 fixed w-full px-7 md:px-o  ">
         <p className="text-white/90 text-3xl  font-bold font-sans   flex gap-2">
               GET IN <p className="text-[#ffb400]">TOUCH</p>
             </p>
             <p><RiMenu3Fill/></p>
-        </header>
-        <div className="w-full md:h-20 relative flex items-center"></div>
+        </header> */}
+        <div className="w-full h-0 md:h-20 relative flex items-center"></div>
         <div className=" hidden md:flex items-center justify-center  ">
           <p className= " md:text-white/10 text-8xl font-bold  tracking-[15px]  translate-x-[25%] ">
             CONTACT
