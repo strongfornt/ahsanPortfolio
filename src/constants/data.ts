@@ -79,3 +79,9 @@ export const social =[
   {icon:AiOutlineGithub,},
   {icon:AiFillInstagram,},
 ];
+
+export const rightbar = [
+  {title:'alu',href:'/'},
+  {title:'potol',href:'/aboutme'},
+  {title:'jinga',href:'/services'}
+];

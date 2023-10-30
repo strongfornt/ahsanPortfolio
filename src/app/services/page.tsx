@@ -28,25 +28,25 @@ const page = () => {
     <div className="relative  ">
       <div className="z-30  hidden md:flex  top-40 relative   ">
         <Link href={"/"}>
-          <div className="bg-yellow-500 cursor-pointer top-[20%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[27%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">HOME</span>
           </div>
         </Link>
         <Link href={"/aboutme"}>
-          <div className="bg-yellow-500 cursor-pointer top-[29%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[36%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaUser className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">ABOUT</span>
           </div>
         </Link>
         <Link href={"/services"}>
-          <div className="bg-yellow-500 cursor-pointer top-[38%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[45%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <MdNoteAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
             <span className="translate-x-14 text-sm"> RESUME</span>
           </div>
         </Link>
         <Link href={"/portfolio"}>
-          <div className="bg-yellow-500 cursor-pointer top-[47%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[54%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <BiSolidShoppingBagAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-16 group-hover:translate-x-12 text-sm">
               {" "}
@@ -56,7 +56,7 @@ const page = () => {
         </Link>
 
         <Link href={"/contact"}>
-          <div className="bg-yellow-500 cursor-pointer top-[56%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[63%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaEnvelope className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm"> CONTACT</span>
           </div>

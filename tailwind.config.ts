@@ -10,7 +10,7 @@ const config: Config = {
     
     extend: {     
       backgroundImage: {
-        'bg-img':"url('/lpfour.jpg')",
+        'bg-img':"url('/lpbgtwo.jpg')",
         
       },        
     },

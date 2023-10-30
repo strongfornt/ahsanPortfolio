@@ -1,3 +1,4 @@
+
 import Container from "@/components/Container";
 import Image from "next/image";
 import React from "react";
@@ -35,25 +36,25 @@ const page = () => {
     <div className="relative">
       <div className="z-30 hidden md:flex   top-40 relative   ">
         <Link href={"/"}>
-          <div className="bg-yellow-500 cursor-pointer top-[20%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[27%] group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaHome className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">HOME</span>
           </div>
         </Link>
         <Link href={"/aboutme"}>
-          <div className="bg-yellow-500 cursor-pointer top-[29%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[36%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px]  overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaUser className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm">ABOUT</span>
           </div>
         </Link>
         <Link href={"/services"}>
-          <div className="bg-yellow-500 cursor-pointer top-[38%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[45%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <MdNoteAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute   " />
             <span className="translate-x-14 text-sm"> RESUME</span>
           </div>
         </Link>
         <Link href={"/portfolio"}>
-          <div className="bg-yellow-500 cursor-pointer top-[47%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[54%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <BiSolidShoppingBagAlt className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-16 group-hover:translate-x-12 text-sm">
               {" "}
@@ -63,7 +64,7 @@ const page = () => {
         </Link>
 
         <Link href={"/contact"}>
-          <div className="bg-yellow-500 cursor-pointer top-[56%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
+          <div className="bg-yellow-500 cursor-pointer top-[63%]  group duration-300 w-[40px] h-[40px] right-2  fixed  rounded-[100px] overflow-hidden hover:w-32 hover:justify-between  text-center text-white  text-xl   justify-evenly flex items-center">
             <FaEnvelope className="group-hover:translate-x-3  rounded-[100px] text-lg   absolute text-white  " />
             <span className="translate-x-14 text-sm"> CONTACT</span>
           </div>
@@ -95,7 +96,7 @@ const page = () => {
             priority
               src={Ahsan}
               alt="the person"
-              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[28%] sm:left-[25%]"
+              className="md:left-0 h-[180px] w-[180px] md:h-[400px]  md:w-[370px] object-contain bg-cover rounded-full md:rounded-none sticky left-[30%] sm:left-[25%]"
             />
           </div>
           <div className="text-white mt-5 w-full md:w-3/4 px-5 md:px-0 ">
@@ -199,7 +200,7 @@ const page = () => {
               <p className="text-white text-xl font-sans font-semibold mt-5">
                 {item?.title}
               </p>
-              <p className="text-sm text-slate-100 font-serif mt-3">
+              <p className="text-sm text-slate-100 font-sans mt-3">
                 {item.description}
               </p>
             </div>
